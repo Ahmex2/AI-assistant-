@@ -1,55 +1,42 @@
-# AI Assistant
 
-This is a Python script that implements a simple voice-controlled AI assistant using the Google Cloud Speech-to-Text API and various Python libraries. The assistant is capable of performing a variety of tasks, such as searching the internet, playing music, telling jokes, and more.
+# Jeff - A Python-based Voice Assistant
+
+Jeff is a simple voice assistant built using Python and several third-party libraries, including the SpeechRecognition, pyttsx3, pywhatkit, wikipedia, pyjokes, and google-cloud-language libraries. With Jeff, you can perform various tasks using voice commands, such as playing music, searching the web, getting information about people, and more.
 
 ## Installation
 
-To use the AI assistant, you will need to install the following libraries using pip:
-
-- `speechrecognition`
-- `pyttsx3`
-- `pywhatkit`
-- `wikipedia`
-- `pyjokes`
-- `google-cloud-language`
-
-You can install these libraries by running the following command:
+To use Jeff, you will need to install Python 3.x and several dependencies. You can install the dependencies by running the following command:
 
 ```
-pip install speechrecognition pyttsx3 pywhatkit wikipedia pyjokes google-cloud-language
+pip install SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes google-cloud-language googlesearch-python
 ```
+
+You will also need to set up credentials for the `google-cloud-language` library in order to use the sentiment analysis feature.
 
 ## Usage
 
-To use the AI assistant, simply run the `AI_assistant.py` script using Python:
+To use Jeff, simply run the `jeff.py` script from the command line:
 
 ```
-python AI_assistant.py
+python jeff.py
 ```
 
-Once the script is running, the assistant will listen for your voice commands. To activate the assistant, say "Jeff" followed by your command. For example, you can say "Jeff, search for Python tutorials" to ask the assistant to search for Python tutorials on the internet.
+The assistant will then listen for your voice commands and respond accordingly. The following voice commands are currently supported:
 
-The assistant is capable of performing a variety of tasks, such as:
-
-- Searching the internet using the `search()` function from the `pywhatkit` library
-- Searching for news articles, images, or videos related to a given query using custom functions
-- Playing music using the `playonyt()` function from the `pywhatkit` library
-- Answering questions by searching Wikipedia using the `wikipedia` library
-- Telling jokes using the `pyjokes` library
-- Running Python code using the `exec()` function
-
-You can customize the assistant further by modifying the script to add more features or change the behavior of existing features.
-
-## Credits
-
-This script was inspired by various online resources and tutorials on building voice-controlled AI assistants using Python. Here are some of the key resources that were used to develop this script:
-
-- [SpeechRecognition library ↗](https://github.com/Uberi/speech_recognition)
-- [pyttsx3 library ↗](https://github.com/nateshmbhat/pyttsx3)
-- [pywhatkit library ↗](https://github.com/Ankit404butfound/PyWhatKit)
-- [wikipedia library ↗](https://github.com/wikipedia/wikipedia-python)
-- [pyjokes library ↗](https://github.com/pyjokes/pyjokes)
-- [Google Cloud Speech-to-Text API ↗](https://cloud.google.com/speech-to-text) 
-
+- "play [song name]": Plays a song on YouTube.
+- "what time is it" or "what is the time": Tells you the current time.
+- "who is [person name]": Looks up information about a person on Google or Wikipedia.
+- "search [query]": Performs a Google search for the given query.
+- "search news [query]": Searches for news articles on the given topic.
+- "search images [query]": Searches for images of the given topic.
+- "search videos [query]": Searches for videos of the given topic.
+- "joke": Tells a random joke.
+- "run [Python code]": Executes the given Python code.
+- "date": Tells you that the assistant is not feeling well to go out today.
+- "are you single": Tells you that the assistant is not capable of being in a relationship.
+- Any other command or query: The assistant will try to respond appropriately based on the sentiment of the input.
 ## License
-MIT License 
+
+Jeff is released under the MIT License. See the LICENSE file for more information. 
+thank you for reading and hope you like it ♥️ 
+Greetings Ahmed
